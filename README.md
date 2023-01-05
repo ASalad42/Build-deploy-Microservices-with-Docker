@@ -36,6 +36,8 @@ Steps to go through in detail:
 
 ## Making Real Projects with Docker 
 
+![image](https://user-images.githubusercontent.com/104793540/210812020-e9adef8a-195f-4408-92bb-220ef871e7d0.png)
+
 ## Docker Compose with Multiple Local Containers 
 
 ## Production-Grade Workflow 
