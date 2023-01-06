@@ -28,8 +28,16 @@ Steps to go through in detail:
  4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.
     show how 
-    
-    
+
+image to container behind the scenes:
+
+- In a container a portion of each resource is made available to process  by the kernal
+
+![image](https://user-images.githubusercontent.com/104793540/211091326-d29cd76d-caaa-40a6-a400-5596e9a9109b.png)
+
+- file snapshot inside image taken and place inside segment od HD i.e hd with just chrome and python installed as shown above. 
+- running process = startup command i.e run chrome for me
+
 ## Manipulating Containers with the Docker client 
 
 ## Building custom images through Docker Server
