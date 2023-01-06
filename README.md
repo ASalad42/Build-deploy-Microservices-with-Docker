@@ -39,7 +39,23 @@ Steps to go through in detail:
 - an image is a file snapshot and place inside segment of HD i.e hd with just chrome and python installed as shown above. 
 - running process = startup command i.e run chrome for me
 
+on my downloaded docker in windows the following is happening:
+
+![image](https://user-images.githubusercontent.com/104793540/211092588-da64949b-e98f-47f8-9b08-a6c148599f9e.png)
+
+check linux virtual machine with `docker version` to confirm:
+![image](https://user-images.githubusercontent.com/104793540/211093016-5e5dfd48-4c7a-4dc3-8cd0-e13a9fc8e619.png)
+
+
 ## Manipulating Containers with the Docker client 
+
+overwritting default commands 
+![image](https://user-images.githubusercontent.com/104793540/211093842-152d96f0-d3cf-472e-a03b-47eea97cb9c3.png)
+
+- `docker run busybox echo hi there ayan`
+- `docker run busybox ls` - check folders inside container 
+- `docker ps` list all running containers 
+
 
 ## Building custom images through Docker Server
 
