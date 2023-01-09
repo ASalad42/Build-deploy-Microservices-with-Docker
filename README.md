@@ -56,6 +56,17 @@ overwritting default commands
 - `docker run busybox ls` - check folders inside container 
 - `docker ps` list all running containers 
 
+docker run = docker create + docker start -a id
+redis - in memory data store, commonly used with web application. Redis is an open source, in-memory data structure store, used as a database, cache, and message broker. MongoDB and Redis are modern NoSQL databases.
+
+- `docker run redis` (redis-server)(must run cli inside the container where redis server is)
+- **execute command inside running container** `docker exec -it container id command` > `docker exec -it a44125e3f27d redis-cli `
+
+IT flags allows for input of terminal cmd into container linux env and get info back out to terminal 
+
+shell access/ terminal access in running container: `docker exec -it id sh` > type commands for unix env - FULL TERMINAL ACCESS (ctrl c or exit or d/ctrl d)
+
+starting with shell: `docker run -it busybox sh`
 
 ## Building custom images through Docker Server
 
