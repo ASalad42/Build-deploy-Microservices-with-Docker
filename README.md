@@ -69,7 +69,43 @@ shell access/ terminal access in running container: `docker exec -it id sh` > ty
 starting with shell: `docker run -it busybox sh`
 
 ## Building custom images through Docker Server
+Dockerfile > docker client > docker server > usable image
 
+![image](https://user-images.githubusercontent.com/104793540/211355736-3446da1e-153a-470d-b19a-7612656a7ca0.png)
+
+https://docs.docker.com/engine/reference/builder/
+
+````
+FROM
+to pull base image 
+
+RUN
+to execute commands 
+
+CMD
+to provide defaults for an executing container 
+
+EXPOSE
+informs docker that the container listens on the speficied network ports at runtime 
+
+ENTRYPOINT
+to configure a container that will run as an executable
+
+WORKDIR
+sets the working diretory 
+
+COPY
+copy a directory from your local machine to docker container 
+
+ADD
+copy files and folders from you local machine to docker containers 
+
+ENV 
+to set environmental variables 
+
+````
+
+- `docker build -t dirofdockerfile`
 ## Making Real Projects with Docker 
 
 ![image](https://user-images.githubusercontent.com/104793540/210812020-e9adef8a-195f-4408-92bb-220ef871e7d0.png)
