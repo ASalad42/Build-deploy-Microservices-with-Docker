@@ -44,6 +44,7 @@ on my downloaded docker in windows the following is happening:
 ![image](https://user-images.githubusercontent.com/104793540/211092588-da64949b-e98f-47f8-9b08-a6c148599f9e.png)
 
 check linux virtual machine with `docker version` to confirm:
+
 ![image](https://user-images.githubusercontent.com/104793540/211093016-5e5dfd48-4c7a-4dc3-8cd0-e13a9fc8e619.png)
 
 
@@ -105,10 +106,18 @@ to set environmental variables
 
 ````
 
-- `docker build -t dirofdockerfile`
+- `docker build -t dirofdockerfile`   or `docker build .`     `docker run id`
+
+![image](https://user-images.githubusercontent.com/104793540/211359527-931ce5f4-3e3e-4b56-bc10-c2269d6b5c4d.png)
+
+tagging: `docker build -t asalad42/repoorprojectname: latest .`  `docker run asalad42/repoorprojectname`
 ## Making Real Projects with Docker 
 
+![image](https://user-images.githubusercontent.com/104793540/211370912-a85ec574-5844-44e0-88f5-44aa4ba49abb.png)
+
 ![image](https://user-images.githubusercontent.com/104793540/210812020-e9adef8a-195f-4408-92bb-220ef871e7d0.png)
+
+![image](https://user-images.githubusercontent.com/104793540/211372595-789e5775-8826-4cd4-9922-767590ba4804.png)
 
 ## Docker Compose with Multiple Local Containers 
 
