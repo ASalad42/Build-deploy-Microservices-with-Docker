@@ -119,6 +119,12 @@ tagging: `docker build -t asalad42/repoorprojectname: latest .`  `docker run asa
 
 ![image](https://user-images.githubusercontent.com/104793540/211372595-789e5775-8826-4cd4-9922-767590ba4804.png)
 
+port mapping:
+
+![image](https://user-images.githubusercontent.com/104793540/211580416-47ca7a35-8d29-4670-9a25-056397b5e83a.png)
+![image](https://user-images.githubusercontent.com/104793540/211580218-9fecdfc9-a498-4780-bdb9-fcf37b01cff2.png)
+
+
 ## Docker Compose with Multiple Local Containers 
 
 ## Production-Grade Workflow 
