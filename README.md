@@ -131,6 +131,11 @@ port mapping:
 
 ![image](https://user-images.githubusercontent.com/104793540/211650312-59c9ec4d-0c56-467f-ab64-0a7172e1d7f1.png)
 
+Specifying the WORKDIR:
+- `docker run -it asalad42/simpleweb sh` see with `ls`
+- WORKDIR /usr/app
+- any following command will be executed relative to this path in the container
+- rebuild after with `docker build -t asalad42/simpleweb .`
 
 ## Docker Compose with Multiple Local Containers 
 
