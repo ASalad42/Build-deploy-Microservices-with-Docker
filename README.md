@@ -125,6 +125,13 @@ port mapping:
 ![image](https://user-images.githubusercontent.com/104793540/211580218-9fecdfc9-a498-4780-bdb9-fcf37b01cff2.png)
 
 
+- `docker build -t asalad42/simpleweb .`
+- `docker run -p 5000:8080 asalad42/simpleweb`   i.e localhost:5000
+- if i want to change port in container must do so in application 
+
+![image](https://user-images.githubusercontent.com/104793540/211650312-59c9ec4d-0c56-467f-ab64-0a7172e1d7f1.png)
+
+
 ## Docker Compose with Multiple Local Containers 
 
 ## Production-Grade Workflow 
