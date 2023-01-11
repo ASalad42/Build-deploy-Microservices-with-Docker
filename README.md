@@ -139,6 +139,19 @@ Specifying the WORKDIR:
 
 ## Docker Compose with Multiple Local Containers 
 
+Goal for number of visits webpage project: 
+
+![image](https://user-images.githubusercontent.com/104793540/211883515-e1ad334c-0ea1-4bb2-a9ca-b22a45f3c8cc.png)
+
+Use docker compose:
+- separate CLI that gets installed along with Docker
+- used to startup multiple docker containers at the same time 
+- automates some of the long winded arguments passing to docker run 
+
+Flow: docker-compose.yml > docker-compose CLI 
+
+
+
 ## Production-Grade Workflow 
 
 ## CI and Deployment 
