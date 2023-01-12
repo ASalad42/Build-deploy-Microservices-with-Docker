@@ -173,8 +173,15 @@ containers i want to create:
 
 ## Production-Grade Workflow 
 
-using docker in production environment 
+using docker in production environment
 
+![image](https://user-images.githubusercontent.com/104793540/212204670-7771928f-7acc-4f27-8999-f9422ccc7285.png)
+
+## Dev
+
+## Test
+
+## Prod
 
 ## CI and Deployment 
 
