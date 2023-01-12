@@ -158,9 +158,11 @@ containers i want to create:
 3. networking between containers automatically established via docker compose
 
 - `docker-compose up`  (docker run myimage)
-- `docker-compose up --build`   (docker build. & docker run myimage)
+- `docker-compose up --build`   (docker build. & docker run myimage) (rebuild container)
 - `docker-compose up -d` launch in background
-- `docker compose down` stop containers
+- `docker-compose down` stop containers
+- restart: always (restart policies for container maintenance and automatic container restart) (always keep server running)
+- `docker-compose ps` status of two running containers 
 
 ## Production-Grade Workflow 
 
