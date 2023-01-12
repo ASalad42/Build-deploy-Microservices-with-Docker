@@ -145,12 +145,18 @@ Goal for number of visits webpage project:
 
 Use docker compose:
 - separate CLI that gets installed along with Docker
-- used to startup multiple docker containers at the same time 
+- **used to startup multiple docker containers at the same time** 
 - automates some of the long winded arguments passing to docker run 
 
 Flow: docker-compose.yml > docker-compose CLI 
 
+containers i want to create:
+1. redis-server: make using redis image
+2. node-app: make using dockerfile  and map port 8081 to 8081 
+3. networking between containers automatically established via docker compose
 
+- `docker-compose up`  (docker run myimage)
+- `docker-compose up --build`   (docker build. & docker run myimage)
 
 ## Production-Grade Workflow 
 
