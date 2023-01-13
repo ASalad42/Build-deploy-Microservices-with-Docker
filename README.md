@@ -177,6 +177,13 @@ using docker in production environment
 
 ![image](https://user-images.githubusercontent.com/104793540/212204670-7771928f-7acc-4f27-8999-f9422ccc7285.png)
 
+Prerequisites: 
+1. Node needed for project: https://nodejs.org/en/download/  after installation, check with `node -v`
+2. Create React App globally and generate the application:
+- https://create-react-app.dev/docs/getting-started/#npx
+- `npx create-react-app frontend`
+
+
 ## Dev
 
 ## Test
