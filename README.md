@@ -183,12 +183,21 @@ Prerequisites:
 - https://create-react-app.dev/docs/getting-started/#npx
 - `npx create-react-app frontend`
 
+![image](https://user-images.githubusercontent.com/104793540/212315815-9d9c02a0-b05f-49b0-894b-a3b95dce10e5.png)
+
+- `npm run start` starts up development server. for dev use only
+- `npm run test` runs tests asscociated with project
+- `npm run build` build a **production** version of the application 
+
 
 ## Dev
-
+Dockerfile.dev in development 
+- build image with `docker build -f Dockerfile.dev .` using f for specifying file to use build from
 ## Test
 
 ## Prod
+Dockerfile in production 
+
 
 ## CI and Deployment 
 
