@@ -218,6 +218,11 @@ Dockerfile.dev in development
 - `docker build -f Dockerfile.dev .`
 -  
 
+blocker: 
+
+- https://docs.docker.com/desktop/windows/wsl/#best-practices
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- WSL extension lets you use VS Code on Windows to build Linux applications that run on the Windows Subsystem for Linux (WSL). You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
 
 ## Test
 
