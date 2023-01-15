@@ -202,7 +202,15 @@ Dockerfile.dev in development
 ![image](https://user-images.githubusercontent.com/104793540/212553786-5ae06125-4db5-44f0-8362-7539398598cf.png)
 ![image](https://user-images.githubusercontent.com/104793540/212553681-8c1feb25-888c-483a-b08a-d7eb56e3f44b.png)
 
-### Part 3
+### Part 3 Ensuring changes to source code automatically affect container 
+
+- problem: made changes in App.js but not seen in browser 
+- initially copied everything with COPY .. command in Dockerfile.dev
+- want to avoid stopping and restarting container, how? Make use of Docker Volumes
+
+![image](https://user-images.githubusercontent.com/104793540/212554428-2d618542-0e67-46f6-8e89-a86dd547d243.png)
+![image](https://user-images.githubusercontent.com/104793540/212554446-2d626de6-11ba-4f32-8223-67054e4c554a.png)
+
 
 ## Test
 
