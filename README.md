@@ -162,7 +162,8 @@ Flow: docker-compose.yml > docker-compose CLI
 containers i want to create:
 1. redis-server: make using redis image
 2. node-app: make using dockerfile  and map port 8081 to 8081 
-3. networking between containers automatically established via docker compose
+
+networking between containers automatically established via docker compose
 
 - `docker-compose up`  (docker run myimage)
 - `docker-compose up --build`   (docker build. & docker run myimage) (rebuild container)
@@ -206,10 +207,16 @@ Dockerfile.dev in development
 
 - problem: made changes in App.js but not seen in browser 
 - initially copied everything with COPY .. command in Dockerfile.dev
-- want to avoid stopping and restarting container, how? Make use of Docker Volumes
+- want to avoid stopping and restarting container, how? **Make use of Docker Volumes**
 
 ![image](https://user-images.githubusercontent.com/104793540/212554428-2d618542-0e67-46f6-8e89-a86dd547d243.png)
 ![image](https://user-images.githubusercontent.com/104793540/212554446-2d626de6-11ba-4f32-8223-67054e4c554a.png)
+- first switch: bookmarks node folder in container so the second switch does not overwrite and delete udring its mapping
+- second switch (note colon for mapping into app folder in container
+ ![image](https://user-images.githubusercontent.com/104793540/212555719-3e97dc76-ff17-4f1b-9f0d-6be4f73da766.png)
+ 
+- `docker build -f Dockerfile.dev .`
+-  
 
 
 ## Test
