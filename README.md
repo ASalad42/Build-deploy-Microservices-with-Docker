@@ -191,9 +191,24 @@ Prerequisites:
 
 
 ## Dev
+
+### Part 1 Creating the Dev Dockerfile
 Dockerfile.dev in development 
 - build image with `docker build -f Dockerfile.dev .` using f for specifying file to use build from
+
+### Part 2 Starting the container 
+
+- `docker run -p 3000:3000 sha256:12ff0233183d8dabb5043917f0cbfc757cd8`
+![image](https://user-images.githubusercontent.com/104793540/212553786-5ae06125-4db5-44f0-8362-7539398598cf.png)
+![image](https://user-images.githubusercontent.com/104793540/212553681-8c1feb25-888c-483a-b08a-d7eb56e3f44b.png)
+
+### Part 3
+
 ## Test
+
+### Part 1 Executing Tests 
+
+### Part 2 Live updating Tests 
 
 ## Prod
 Dockerfile in production 
