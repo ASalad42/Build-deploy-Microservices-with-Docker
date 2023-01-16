@@ -220,7 +220,7 @@ Dockerfile.dev in development
 - `docker build -f Dockerfile.dev .`
 -  
 
-blocker: 
+blocker: Docker Desktop WSL 2 backend on Windows
 
 A significant difference when using WSL is that you will need to create and run your project files from within the Linux filesystem, not the Windows filesystem. **Going forward, all Docker commands should be run within WSL**
 
