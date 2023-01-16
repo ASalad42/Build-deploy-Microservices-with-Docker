@@ -222,8 +222,14 @@ blocker:
 
 A significant difference when using WSL is that you will need to create and run your project files from within the Linux filesystem, not the Windows filesystem. **Going forward, all Docker commands should be run within WSL**
 
+![image](https://user-images.githubusercontent.com/104793540/212734223-4963a1a9-c8e8-464a-b2a9-d6b85859b8d3.png)
+![image](https://user-images.githubusercontent.com/104793540/212734423-56d9d539-427b-4196-8e9b-72f8a449e4f3.png)
+
+HOW:
+
 -  access your Linux system by running wsl in the Windows Search Bar then `cd ~` to change into your Ubuntu user's home directory on the Linux filesystem.
 - https://docs.docker.com/desktop/windows/wsl/#best-practices
+- `wsl` `wsl.exe --update` `wsl -l -v` `wsl.exe --set-default-version 2` `wsl --set-default ubuntu-18.04` `wsl -l -v` `wsl`
 - https://learn.microsoft.com/en-us/windows/wsl/install
 - WSL extension lets you use VS Code on Windows to build Linux applications that run on the Windows Subsystem for Linux (WSL). You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
 - https://learn.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
