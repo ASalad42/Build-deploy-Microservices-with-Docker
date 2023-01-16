@@ -215,6 +215,8 @@ Dockerfile.dev in development
 - second switch (note colon for mapping into app folder in container
  ![image](https://user-images.githubusercontent.com/104793540/212555719-3e97dc76-ff17-4f1b-9f0d-6be4f73da766.png)
  
+- open wsl and run `cd ~` `pwd`  should be in /home/username
+- `explorer.exe .`  and move the frontend project directory into the WSL file browser window:
 - `docker build -f Dockerfile.dev .`
 -  
 
@@ -224,6 +226,8 @@ A significant difference when using WSL is that you will need to create and run 
 
 ![image](https://user-images.githubusercontent.com/104793540/212734223-4963a1a9-c8e8-464a-b2a9-d6b85859b8d3.png)
 ![image](https://user-images.githubusercontent.com/104793540/212734423-56d9d539-427b-4196-8e9b-72f8a449e4f3.png)
+![image](https://user-images.githubusercontent.com/104793540/212734832-3f475fc6-7594-43fb-b748-2e741a052936.png)
+
 
 HOW:
 
