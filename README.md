@@ -217,8 +217,8 @@ Dockerfile.dev in development
  
 - open wsl and run `cd ~` `pwd`  should be in /home/username
 - `explorer.exe .`  and move the frontend project directory into the WSL file browser window:
-- `docker build -f Dockerfile.dev .`
--  
+- Using the WSL terminal build your Docker image as you typically would `docker build -f Dockerfile.dev -t ayan:frontend .`
+- Using ~ alias in WSL terminal to start and run a container: `docker run -it -p 3000:3000 -v /home/node/app/node_modules -v ~/frontend:/home/node/app ayan:frontend`
 
 blocker: Docker Desktop WSL 2 backend on Windows
 
