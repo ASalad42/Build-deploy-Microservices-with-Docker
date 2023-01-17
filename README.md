@@ -254,16 +254,15 @@ HOW:
 Run tests associated with the project
 
 ### Step 1 Executing Tests 
-
+Build container to run tests in:
 - `docker build -f Dockerfile.dev -t ayan:frontend .`
 - `docker run -it imageid npm run test`
 
 ![image](https://user-images.githubusercontent.com/104793540/212972681-14a37d26-747a-4214-b348-681dfa3c7fc6.png)
 
 
-### Step 2 Live updating Tests 
-
-### Step 3 Docker Compose for running Tests 
+### Step 2 Docker Compose for running Tests and live updating 
+- 
 
 ## Prod
 Dockerfile in production 
