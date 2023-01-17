@@ -248,6 +248,7 @@ HOW:
 - https://learn.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 - downloaded ubuntu from store 
 - https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 
 ## Test
 
