@@ -251,10 +251,19 @@ HOW:
 - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 
 ## Test
+Run tests associated with the project
 
-### Part 1 Executing Tests 
+### Step 1 Executing Tests 
 
-### Part 2 Live updating Tests 
+- `docker build -f Dockerfile.dev -t ayan:frontend .`
+- `docker run -it imageid npm run test`
+
+![image](https://user-images.githubusercontent.com/104793540/212972681-14a37d26-747a-4214-b348-681dfa3c7fc6.png)
+
+
+### Step 2 Live updating Tests 
+
+### Step 3 Docker Compose for running Tests 
 
 ## Prod
 Dockerfile in production 
