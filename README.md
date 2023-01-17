@@ -223,6 +223,11 @@ Dockerfile.dev in development
 - `explorer.exe .`  and move the frontend project directory into the WSL file browser window:
 - Using the WSL terminal build your Docker image as you typically would `docker build -f Dockerfile.dev -t ayan:frontend .`
 - Using ~ alias in WSL terminal to start and run a container: `docker run -it -p 3000:3000 -v /home/node/app/node_modules -v ~/frontend:/home/node/app ayan:frontend`
+- **Easier to use** docker-compose up than this long run command
+
+![image](https://user-images.githubusercontent.com/104793540/212891790-bdfdb930-4ca3-4516-81e6-432f6fa3d2b5.png)
+
+
 
 blocker: Docker Desktop WSL 2 backend on Windows
 
