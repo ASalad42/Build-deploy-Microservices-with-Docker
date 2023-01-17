@@ -193,17 +193,19 @@ Prerequisites:
 
 ## Dev
 
-### Part 1 Creating the Dev Dockerfile
+### Option 1 
+
+#### Part 1.1 Creating the Dev Dockerfile
 Dockerfile.dev in development 
 - build image with `docker build -f Dockerfile.dev .` using f for specifying file to use build from
 
-### Part 2 Starting the container 
+#### Part 1.2 Starting the container 
 
 - `docker run -p 3000:3000 sha256:12ff0233183d8dabb5043917f0cbfc757cd8`
 ![image](https://user-images.githubusercontent.com/104793540/212553786-5ae06125-4db5-44f0-8362-7539398598cf.png)
 ![image](https://user-images.githubusercontent.com/104793540/212553681-8c1feb25-888c-483a-b08a-d7eb56e3f44b.png)
 
-### Part 3 Ensuring changes to source code automatically affect container 
+#### Part 1.3 Ensuring changes to source code automatically affect container 
 
 - problem: made changes in App.js but not seen in browser 
 - initially copied everything with COPY .. command in Dockerfile.dev
@@ -215,6 +217,8 @@ Dockerfile.dev in development
 - second switch (note colon for mapping into app folder in container
  ![image](https://user-images.githubusercontent.com/104793540/212555719-3e97dc76-ff17-4f1b-9f0d-6be4f73da766.png)
  
+### Option 2 (Best Practice)(running all docker commands within WSL)
+
 - open wsl and run `cd ~` `pwd`  should be in /home/username
 - `explorer.exe .`  and move the frontend project directory into the WSL file browser window:
 - Using the WSL terminal build your Docker image as you typically would `docker build -f Dockerfile.dev -t ayan:frontend .`
