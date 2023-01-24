@@ -267,7 +267,34 @@ Build container to run tests in:
 
 
 ### Step 2 Docker Compose for running Tests and live updating 
-- 
+
+````
+version: "3"
+services:
+# first container for hosting development server 
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/node/app/node_modules
+      - .:/home/node/app
+  # second container soley for running tests 
+  tests:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /home/node/app/node_modules
+      - .:/home/node/app
+    command: ["npm", "run", "test"]
+
+````
+
+- `docker-compose up --build`
 
 ## Prod
 Dockerfile in production 
