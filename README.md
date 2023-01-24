@@ -249,6 +249,7 @@ HOW:
 - downloaded ubuntu from store 
 - https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password
 - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- https://www.c-sharpcorner.com/article/how-to-install-visual-studio-code-on-wsl/
 
 ## Test
 Run tests associated with the project
