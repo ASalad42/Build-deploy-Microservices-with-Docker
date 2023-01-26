@@ -299,11 +299,12 @@ services:
 - `docker-compose up --build`
 
 ## Prod
-Dockerfile in production 
 
 ![image](https://user-images.githubusercontent.com/104793540/214830634-9c31844f-2c9f-4709-91a6-b192237adeeb.png)
 ![image](https://user-images.githubusercontent.com/104793540/214830863-318468c1-a934-4463-83d7-f9efba30b2c5.png)
 
+- creating separate Dockerfile for creating production version of web container:
+- will start up an Nginx system > serves up index.html & main.js 
 
 
 ## CI and Deployment 
