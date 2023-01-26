@@ -193,6 +193,8 @@ Prerequisites:
 
 ## Dev
 
+![image](https://user-images.githubusercontent.com/104793540/214830536-76bb069d-965c-455f-9c19-406b3a6a1135.png)
+
 ### Option 1 
 
 #### Part 1.1 Creating the Dev Dockerfile
@@ -298,6 +300,10 @@ services:
 
 ## Prod
 Dockerfile in production 
+
+![image](https://user-images.githubusercontent.com/104793540/214830634-9c31844f-2c9f-4709-91a6-b192237adeeb.png)
+![image](https://user-images.githubusercontent.com/104793540/214830863-318468c1-a934-4463-83d7-f9efba30b2c5.png)
+
 
 
 ## CI and Deployment 
