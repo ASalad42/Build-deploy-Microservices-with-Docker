@@ -312,11 +312,23 @@ services:
 
 
 ````
+FROM node:16-alpine as builder
+WORKDIR '/app'
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
 
+
+
+FROM nginx 
+COPY --from=builder /app/build /usr/share/nginx/html
+# check dockerhub for nginx to find usr....
 
 ````
 
-
+- `docker build .`
+- `docker run -p 8080:80 idimage
 
 ## CI and Deployment 
 
