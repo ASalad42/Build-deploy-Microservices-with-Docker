@@ -306,6 +306,17 @@ services:
 - creating separate Dockerfile for creating production version of web container:
 - will start up an Nginx system > serves up index.html & main.js 
 
+### Multi-Step Docker Builds 
+
+![image](https://user-images.githubusercontent.com/104793540/215174347-da8416e6-254f-4ca6-963a-1c6c6ff99e64.png)
+
+
+````
+
+
+````
+
+
 
 ## CI and Deployment 
 
