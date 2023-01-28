@@ -351,10 +351,17 @@ Tell Travis how to deploy my code to AWS
 - .travis.yml
 
 ```
+language: generic 
 sudo: requried 
 services:
   - docker
   
 before_install:
-  - docker build -t asalad42/CI-and-Deployment- -f Dockerfile.dev .
+  - docker build -t asalad42/docker-react -f Dockerfile.dev .
+  
+script:
+  - docker run -e CI=true asalad42/docker-react npm run test
 ```
+
+- https://create-react-app.dev/docs/running-tests/#continuous-integration
+- https://docs.docker.com/engine/reference/run/#env-environment-variables
