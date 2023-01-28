@@ -339,5 +339,11 @@ COPY --from=builder /app/build /usr/share/nginx/html
 Travis YMl File coniguration 
 
 ```
+Tell Travis i need a copy of docker running 
 
+Build my image using Dockerfile.dev
+
+Tell Travis how to run test suite 
+
+Tell Travis how to deploy my code to AWS
 ```
