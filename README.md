@@ -332,4 +332,12 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
 ## CI and Deployment 
 
+- set up travis and github
 
+![image](https://user-images.githubusercontent.com/104793540/215282491-65948535-99cd-419b-893b-536e4455e0b5.png)
+
+Travis YMl File coniguration 
+
+```
+
+```
