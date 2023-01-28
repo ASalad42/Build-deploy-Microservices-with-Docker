@@ -347,3 +347,14 @@ Tell Travis how to run test suite
 
 Tell Travis how to deploy my code to AWS
 ```
+
+- .travis.yml
+
+```
+sudo: requried 
+services:
+  - docker
+  
+before_install:
+  - docker build -t asalad42/CI-and-Deployment- -f Dockerfile.dev .
+```
