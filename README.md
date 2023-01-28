@@ -334,7 +334,7 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
 - set up travis and github
 
-![image](https://user-images.githubusercontent.com/104793540/215282491-65948535-99cd-419b-893b-536e4455e0b5.png)
+![image](https://user-images.githubusercontent.com/104793540/215284174-cd9dc7b9-4a16-4b00-bd06-81e77432772c.png)
 
 Travis YMl File coniguration 
 
