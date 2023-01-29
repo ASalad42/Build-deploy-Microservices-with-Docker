@@ -65,6 +65,10 @@ overwritting default commands
 - `docker kill containerid`
 - `docker system prune`
 - `docker logs containerid` good for debugging
+- `wsl --unregister docker-desktop`
+- `wsl --unregister docker-desktop-data`
+- `wsl --terminate docker-desktop`
+- `wsl --terminate docker-desktop-data`
 
 docker run = docker create + docker start -a id
 redis - in memory data store, commonly used with web application. Redis is an open source, in-memory data structure store, used as a database, cache, and message broker. MongoDB and Redis are modern NoSQL databases.
