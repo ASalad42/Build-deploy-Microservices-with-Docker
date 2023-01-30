@@ -367,5 +367,15 @@ script:
   - docker run -e CI=true asalad42/docker-react npm run test
 ```
 
+### Automatic Build Creation 
+
+- git commit and then push triggers travis job:
+
+
+![image](https://user-images.githubusercontent.com/104793540/215499640-1bd85bfc-ccfb-4c67-9b25-0f61758a3c6c.png)
+![image](https://user-images.githubusercontent.com/104793540/215499758-d75f12c4-7ea2-425f-a4d1-9d2640655f17.png)
+
+
+
 - https://create-react-app.dev/docs/running-tests/#continuous-integration
 - https://docs.docker.com/engine/reference/run/#env-environment-variables
