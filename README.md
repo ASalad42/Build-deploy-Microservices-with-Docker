@@ -433,7 +433,9 @@ deploy:
 - `git checkout -b feature`
 - make changes on app.js > git add, git commit
 - `git push origin feature`
-- compare and pull request on github > merge into main 
+- compare and pull request on github > all checks have passsed > merge pull request
+- Travis CI new build triggers 
+- auto updated on elasticbeanstalk 
 
 
 
