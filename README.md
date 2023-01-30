@@ -384,3 +384,39 @@ script:
 ![image](https://user-images.githubusercontent.com/104793540/215504020-faca7cba-639b-4368-a93e-2f0510b52cf4.png)
 ![image](https://user-images.githubusercontent.com/104793540/215505445-f08a48fd-d48c-4e2b-840a-c2f7d2744357.png)
 
+#### Automated deployments 
+
+- updated .travis.yml file 
+- new iam user docker-react-travis-ci > fullaccess > back on travis and add keys 
+- push from local host to github 
+
+```
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t asalad42/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true asalad42/docker-react npm run test
+
+deploy: 
+  provider: elasticbeanstalk
+  region: "eu-west-1"
+  app: "docker-react"
+  env: "Dockerreact-env"
+  bucket_name: "elasticbeanstalk-eu-west-1-670135081089"
+  bucket_path: "docker-react"
+  on:
+    branch: main 
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+
+```
+![image](https://user-images.githubusercontent.com/104793540/215518213-50d03146-9efc-4a12-a536-df745780097d.png)
+![image](https://user-images.githubusercontent.com/104793540/215518313-8d7ad55a-4ec6-4011-a888-08420767902d.png)
+![image](https://user-images.githubusercontent.com/104793540/215518119-207b03e0-c35e-4c03-b23f-e9ee53d9200d.png)
+
