@@ -430,7 +430,7 @@ deploy:
 - travis ci picked up change and ran tests > deployed application to AWS.
 
 
-
+**Redeploy on Pull Request** 
 
 - `git checkout -b feature`
 - make changes on app.js > git add, git commit
