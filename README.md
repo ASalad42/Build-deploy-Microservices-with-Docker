@@ -434,3 +434,12 @@ deploy:
 - make changes on app.js > git add, git commit
 - `git push origin feature`
 - compare and pull request on github > merge into main 
+
+
+
+##### Environtment cleanup
+
+- Go to the Elastic Beanstalk dashboard.
+- In the left sidebar click "Applications"
+- Click the application you'd like to delete.
+- Click the "Actions" button and click "Delete Application"
