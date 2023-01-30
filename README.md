@@ -375,7 +375,10 @@ script:
 ![image](https://user-images.githubusercontent.com/104793540/215499640-1bd85bfc-ccfb-4c67-9b25-0f61758a3c6c.png)
 ![image](https://user-images.githubusercontent.com/104793540/215499758-d75f12c4-7ea2-425f-a4d1-9d2640655f17.png)
 
-
-
 - https://create-react-app.dev/docs/running-tests/#continuous-integration
 - https://docs.docker.com/engine/reference/run/#env-environment-variables
+
+
+### AWS Elastic Beanstalk 
+
+![image](https://user-images.githubusercontent.com/104793540/215503460-44b6398c-2632-4b13-a7b5-4b205636a0f7.png)
