@@ -386,6 +386,8 @@ script:
 ### AWS Elastic Beanstalk 
 
 ![image](https://user-images.githubusercontent.com/104793540/215504020-faca7cba-639b-4368-a93e-2f0510b52cf4.png)
+![image](https://user-images.githubusercontent.com/104793540/215561780-69b74f57-f51c-4555-b3fe-731e8a85d8de.png)
+
 ![image](https://user-images.githubusercontent.com/104793540/215505445-f08a48fd-d48c-4e2b-840a-c2f7d2744357.png)
 
 #### Automated deployments 
