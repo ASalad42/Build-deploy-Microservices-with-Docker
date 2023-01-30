@@ -65,6 +65,7 @@ overwritting default commands
 - `docker kill containerid`
 - `docker system prune`
 - `docker logs containerid` good for debugging
+- `docker inspect` returns low-level information on Docker objects
 - `wsl --unregister docker-desktop`
 - `wsl --unregister docker-desktop-data`
 - `wsl --terminate docker-desktop`
