@@ -416,7 +416,7 @@ deploy:
   secret_access_key: "$AWS_SECRET_KEY"
 
 ```
-![image](https://user-images.githubusercontent.com/104793540/215518213-50d03146-9efc-4a12-a536-df745780097d.png)
+![image](https://user-images.githubusercontent.com/104793540/215519808-b856004d-f862-48c0-887f-698429ebc4f7.png)
 ![image](https://user-images.githubusercontent.com/104793540/215518313-8d7ad55a-4ec6-4011-a888-08420767902d.png)
-![image](https://user-images.githubusercontent.com/104793540/215518119-207b03e0-c35e-4c03-b23f-e9ee53d9200d.png)
+![image](https://user-images.githubusercontent.com/104793540/215519669-91e5da36-88a3-41a8-911d-db428ceb700c.png)
 
