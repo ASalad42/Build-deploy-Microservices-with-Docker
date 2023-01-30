@@ -337,6 +337,9 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
 ## CI and Deployment 
 
+![image](https://user-images.githubusercontent.com/104793540/215553416-e8b6c2a6-c759-48a3-b30a-9ecd01116785.png)
+
+
 - set up travis and github
 
 ![image](https://user-images.githubusercontent.com/104793540/215284174-cd9dc7b9-4a16-4b00-bd06-81e77432772c.png)
@@ -420,4 +423,7 @@ deploy:
 ![image](https://user-images.githubusercontent.com/104793540/215519808-b856004d-f862-48c0-887f-698429ebc4f7.png)
 ![image](https://user-images.githubusercontent.com/104793540/215518313-8d7ad55a-4ec6-4011-a888-08420767902d.png)
 ![image](https://user-images.githubusercontent.com/104793540/215519669-91e5da36-88a3-41a8-911d-db428ceb700c.png)
+
+- Dockerfile add EXPOSE 80 for nginx, commited changes and pushed to github
+- travis ci picked up change and ran tests > deployed application to AWS.
 
