@@ -427,3 +427,10 @@ deploy:
 - Dockerfile add EXPOSE 80 for nginx, commited changes and pushed to github
 - travis ci picked up change and ran tests > deployed application to AWS.
 
+
+
+
+- `git checkout -b feature`
+- make changes on app.js > git add, git commit
+- `git push origin feature`
+- compare and pull request on github > merge into main 
