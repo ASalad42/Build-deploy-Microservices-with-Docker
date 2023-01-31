@@ -430,8 +430,12 @@ deploy:
 ![image](https://user-images.githubusercontent.com/104793540/215518313-8d7ad55a-4ec6-4011-a888-08420767902d.png)
 ![image](https://user-images.githubusercontent.com/104793540/215519669-91e5da36-88a3-41a8-911d-db428ceb700c.png)
 
-- Dockerfile add EXPOSE 80 for nginx, commited changes and pushed to github
+- Dockerfile add EXPOSE 80 for nginx, makes changes in app.js file, commited changes and pushed to github
 - travis ci picked up change and ran tests > deployed application to AWS.
+
+![image](https://user-images.githubusercontent.com/104793540/215857690-5ffaa04c-9fe4-49fc-bd64-1c856a65786e.png)
+![image](https://user-images.githubusercontent.com/104793540/215857872-902d8065-eb5e-4cfd-a758-a279879a3b19.png)
+
 
 
 **Redeploy on Pull Request** 
