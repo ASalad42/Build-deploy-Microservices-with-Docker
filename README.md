@@ -212,6 +212,10 @@ Dockerfile.dev in development
 ![image](https://user-images.githubusercontent.com/104793540/212553786-5ae06125-4db5-44f0-8362-7539398598cf.png)
 ![image](https://user-images.githubusercontent.com/104793540/212553681-8c1feb25-888c-483a-b08a-d7eb56e3f44b.png)
 
+- `docker build -t asalad42/docker-react -f Dockerfile.dev .`
+- `docker run -d -p 3000:3000 asalad42/docker-react`
+- `docker push asalad42/docker-react:latest`
+
 #### Part 1.3 Ensuring changes to source code automatically affect container 
 
 - problem: made changes in App.js but not seen in browser 
