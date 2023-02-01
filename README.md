@@ -468,4 +468,5 @@ Dev Dockerfiles:
 - worker (calculates value for indices and puts back into redis)
 
 Docker compose:
+
 ![image](https://user-images.githubusercontent.com/104793540/216112077-d9afc119-4ed2-47c7-acbe-fd67d4fd8f9e.png)
