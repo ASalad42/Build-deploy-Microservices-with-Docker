@@ -177,7 +177,7 @@ networking between containers automatically established via docker compose
 - restart: always (restart policies for container maintenance and automatic container restart) (always keep server running)
 - `docker-compose ps` status of two running containers 
 
-## Production-Grade Workflow 
+## Production-Grade Workflow (Single React Application backedup by an Nginx Server)
 
 using docker in production environment
 
@@ -463,3 +463,6 @@ deploy:
 - In the left sidebar click "Applications"
 - Click the application you'd like to delete.
 - Click the "Actions" button and click "Delete Application"
+
+
+## Building Multi-Container Application 
