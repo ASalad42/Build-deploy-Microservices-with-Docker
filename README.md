@@ -469,4 +469,4 @@ Dev Dockerfiles:
 
 Docker compose:
 
-![image](https://user-images.githubusercontent.com/104793540/216112077-d9afc119-4ed2-47c7-acbe-fd67d4fd8f9e.png)
+![image](https://user-images.githubusercontent.com/104793540/216120527-5992c646-d023-4607-89c1-143a08e38040.png)
