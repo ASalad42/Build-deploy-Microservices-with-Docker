@@ -451,7 +451,21 @@ deploy:
 
 ## Building Multi-Container Application 
 
+Building complicated fib calculator:
+
+![image](https://user-images.githubusercontent.com/104793540/216111376-bf817d92-cd1b-4d9e-a1e5-4fcad9950bda.png)
+
+Development and Production Plan 
+
 ![image](https://user-images.githubusercontent.com/104793540/216108663-bbccac8b-b68d-487e-a590-ffc479b7a0df.png)
 ![image](https://user-images.githubusercontent.com/104793540/216108092-2f9fd928-dcc5-4b72-87ea-2c59720bcc9b.png)
 ![image](https://user-images.githubusercontent.com/104793540/216108188-4c88cb81-e456-4aaa-8672-fa0b333e05f0.png)
 
+Dev Dockerfiles:
+
+- react app
+- express server
+- worker
+
+Docker compose:
+![image](https://user-images.githubusercontent.com/104793540/216112077-d9afc119-4ed2-47c7-acbe-fd67d4fd8f9e.png)
