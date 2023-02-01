@@ -1,10 +1,6 @@
-Docker Compose config Update
+# Quick Steps
 
-Make sure to follow the steps in the earlier lecture note to rename your development docker compose file and create a new production compose file:
-
-https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/27975358
-
-Initial Setup
+## Initial Setup
 
 1. Go to AWS Management Console
 
@@ -24,21 +20,11 @@ Initial Setup
 
 9. Click the link above the checkmark for your application. This should open the application in your browser and display a Congratulations message.
 
-Change from Micro to Small instance type:
 
-Note that a t2.small is outside of the free tier. t2 micro has been known to timeout and fail during the build process on the old platform. However, this may not be an issue on the new Docker running on 64bit Amazon Linux 2 platform. So, these steps may no longer be necessary.
 
-1. In the left sidebar under Docker-env click "Configuration"
 
-2. Find "Capacity" and click "Edit"
 
-3. Scroll down to find the "Instance Type" and change from t2.micro to t2.small
-
-4. Click "Apply"
-
-5. The message might say "No Data" or "Severe" in Health Overview before changing to "Ok"
-
-Add AWS configuration details to .travis.yml file's deploy script
+## Add AWS configuration details to .travis.yml file's deploy script
 
 1. Set the region. The region code can be found by clicking the region in the toolbar next to your username.
 
@@ -62,7 +48,8 @@ eg: 'elasticbeanstalk-us-east-1-923445599289'
 
 7. Set secret_access_key to $AWS_SECRET_KEY
 
-Create an IAM User
+
+## Create an IAM User
 
 1. Search for the "IAM Security, Identity & Compliance Service"
 
@@ -92,7 +79,8 @@ eg: docker-react-travis-ci
 
 13. Copy and / or download the Access Key ID and Secret Access Key to use in the Travis Variable Setup.
 
-Travis Variable Setup
+
+## Travis Variable Setup
 
 1. Go to your Travis Dashboard and find the project repository for the application we are working on.
 
@@ -102,7 +90,8 @@ Travis Variable Setup
 
 4. Create an AWS_SECRET_KEY variable and paste your IAM secret key from step #13 above.
 
-Deploying App
+
+## Deploying App
 
 1. Make a small change to your src/App.js file in the greeting text.
 
