@@ -463,9 +463,9 @@ Development and Production Plan
 
 Dev Dockerfiles:
 
-- react app
-- express server
-- worker
+- react app (2 pages user can visit in application)
+- express server (API layer that communicates with redis and postgress)
+- worker (calculates value for indices and puts back into redis)
 
 Docker compose:
 ![image](https://user-images.githubusercontent.com/104793540/216112077-d9afc119-4ed2-47c7-acbe-fd67d4fd8f9e.png)
