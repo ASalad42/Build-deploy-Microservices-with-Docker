@@ -1,4 +1,4 @@
-# Build, test, and deploy Docker applications with Kubernetes
+# Build, test, and deploy Docker applications 
 
 ## Diveing into Docker
 
