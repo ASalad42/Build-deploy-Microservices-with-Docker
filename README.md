@@ -373,6 +373,10 @@ script:
 
 ### AWS Elastic Beanstalk 
 
+- AWS Elastic Beanstalk is an easy-to-use AWS service for **deploying and scaling web applications and services**
+- just upload code (i am using travis ci) and EB automatically handles the deployment, capacity provisioning, load balancing, auto-scaling and application health monitoring. 
+- fastest and simplest way to deploy application to AWS while **retaining full control over the AWS resources powering application and access  to the underlying resources at any time**
+
 ![image](https://user-images.githubusercontent.com/104793540/216078996-1dd776a5-ef22-4b00-9366-a9eb25afad37.png)
 ![image](https://user-images.githubusercontent.com/104793540/215561780-69b74f57-f51c-4555-b3fe-731e8a85d8de.png)
 ![image](https://user-images.githubusercontent.com/104793540/216079134-c5e6f99f-87b8-456c-8d23-e774bc11a24b.png)
