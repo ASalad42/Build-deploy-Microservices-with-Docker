@@ -454,6 +454,7 @@ deploy:
 - Travis CI new build triggers 
 - auto updated on elasticbeanstalk 
 
+![image](https://user-images.githubusercontent.com/104793540/216084365-98453763-7213-4c3b-969a-2c3d85e25196.png)
 
 
 ##### Environtment cleanup
