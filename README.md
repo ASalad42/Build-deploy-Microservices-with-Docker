@@ -389,10 +389,9 @@ script:
 
 ### AWS Elastic Beanstalk 
 
-![image](https://user-images.githubusercontent.com/104793540/215504020-faca7cba-639b-4368-a93e-2f0510b52cf4.png)
+![image](https://user-images.githubusercontent.com/104793540/216078996-1dd776a5-ef22-4b00-9366-a9eb25afad37.png)
 ![image](https://user-images.githubusercontent.com/104793540/215561780-69b74f57-f51c-4555-b3fe-731e8a85d8de.png)
-
-![image](https://user-images.githubusercontent.com/104793540/215505445-f08a48fd-d48c-4e2b-840a-c2f7d2744357.png)
+![image](https://user-images.githubusercontent.com/104793540/216079134-c5e6f99f-87b8-456c-8d23-e774bc11a24b.png)
 
 #### Automated deployments 
 
@@ -435,6 +434,7 @@ deploy:
 
 ![image](https://user-images.githubusercontent.com/104793540/215857690-5ffaa04c-9fe4-49fc-bd64-1c856a65786e.png)
 ![image](https://user-images.githubusercontent.com/104793540/215857872-902d8065-eb5e-4cfd-a758-a279879a3b19.png)
+![image](https://user-images.githubusercontent.com/104793540/216078299-b1eff404-710b-4f21-8a00-7059bbc055bc.png)
 
 
 
