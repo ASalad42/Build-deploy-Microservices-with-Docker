@@ -28,7 +28,7 @@
 
 1. Set the region. The region code can be found by clicking the region in the toolbar next to your username.
 
-eg: 'us-east-1'
+eg: 'eu-west-1'
 
 2. app should be set to the Application Name (Step #4 in the Initial Setup above)
 
