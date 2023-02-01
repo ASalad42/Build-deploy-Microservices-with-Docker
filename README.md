@@ -444,6 +444,13 @@ deploy:
 - make changes on app.js > git add, git commit
 - `git push origin feature`
 - compare and pull request on github > all checks have passsed > merge pull request
+
+![image](https://user-images.githubusercontent.com/104793540/216037042-76f7e7dc-8b98-4f79-9aa2-65ce04967c28.png)
+![image](https://user-images.githubusercontent.com/104793540/216037187-f3feaf7a-6c5c-495a-9bbf-638573ee185a.png)
+![image](https://user-images.githubusercontent.com/104793540/216037377-5aaf642d-c12f-43fd-a2d1-796f69178076.png)
+
+- `git branch`   `git checkout main`  `git branch -D feature`     `git push remote_name --delete branch_name`   Note: In most cases, remote_name will be origin
+
 - Travis CI new build triggers 
 - auto updated on elasticbeanstalk 
 
