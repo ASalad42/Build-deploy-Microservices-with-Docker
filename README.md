@@ -1,6 +1,6 @@
 # Build, test, and deploy Docker applications with Kubernetes
 
-## Dive into Docker
+## Diveing into Docker
 
 
 ![image](https://user-images.githubusercontent.com/104793540/210808264-f792210e-f126-4b52-8812-d7b5ffadde63.png)
@@ -12,22 +12,6 @@
 - started docker desktop 
 - `docker run hello-world`
 
-Steps to go through in detail: 
-
- 1. The Docker client contacted the Docker daemon.
-    show how
- 
- 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-    (amd64)
-    show how 
- 
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
-    show how 
- 
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
-    show how 
 
 ### image to container behind the scenes:
 
