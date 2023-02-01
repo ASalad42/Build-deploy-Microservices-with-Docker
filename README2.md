@@ -97,9 +97,10 @@ eg: docker-react-travis-ci
 
 2. In the project root, in your terminal run:
 
-git add.
-git commit -m “testing deployment"
-git push origin main
+- git add.
+- git commit -m “testing deployment"
+- git push origin main
+
 3. Go to your Travis Dashboard and check the status of your build.
 
 4. The status should eventually return with a green checkmark and show "build passing"
