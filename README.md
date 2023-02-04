@@ -559,12 +559,20 @@ upstream api {
 
 
 server {
-    litsen 80;
+    listen 80;
 
     location / {
         proxy_pass http://client; 
     }
 
+
+    location /ws {
+        proxy_pass http://client;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
+    
     location /api {
         rewrite /api/(.*) /$1 break;
         proxy_pass http://api;
@@ -584,6 +592,12 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf
 - `docker context ls`
 - fix errors then `docker-compose down`
 - `docker-compose up --build`
+
+![image](https://user-images.githubusercontent.com/104793540/216782304-37fa54ba-c530-49e8-9b22-45dba5ebc826.png)
+![image](https://user-images.githubusercontent.com/104793540/216782435-6bdd676a-29eb-4f8e-b525-de5726daf6da.png)
+![image](https://user-images.githubusercontent.com/104793540/216782448-e10aeb36-e2b6-4bf1-8031-a0785aed9787.png)
+
+** Both pages and calculations working**
 
 Troubleshooting:
 - WebSocket connection failed
