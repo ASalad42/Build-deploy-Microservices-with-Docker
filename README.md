@@ -466,6 +466,17 @@ Development and Production Plan
 ![image](https://user-images.githubusercontent.com/104793540/216108092-2f9fd928-dcc5-4b72-87ea-2c59720bcc9b.png)
 ![image](https://user-images.githubusercontent.com/104793540/216108188-4c88cb81-e456-4aaa-8672-fa0b333e05f0.png)
 
+Create react app:
+- `npx create-react-app client`
+- `rm -r .git`
+- client > src > add new files (otherpage.js and fib.js), for routing edit App.js file
+
+Also setup:
+- worker process (index,js, keys.js, package.json > calculates fib sequence) 
+- express API server (package.json with dependecies and scripts, keys.js to connect to running redis and postgres instances, index.js for logic to connect to redis and postgres) 
+
+- `node index.js` must say cannot find module "example" otherwise there is a syntax error in index or keys files
+
 Dev Dockerfiles:
 
 - client: react app (2 pages user can visit in application)
