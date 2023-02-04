@@ -528,4 +528,4 @@ Troubleshooting:
 - opening websocket connections
 - solution: set an environment variable on the client service in the docker-compose.yml
 
-## Continous Integration Workflow Multiple Images
+## Continous Integration Workflow for Multiple Images
