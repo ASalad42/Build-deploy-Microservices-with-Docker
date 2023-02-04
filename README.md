@@ -597,12 +597,15 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf
 ![image](https://user-images.githubusercontent.com/104793540/216782435-6bdd676a-29eb-4f8e-b525-de5726daf6da.png)
 ![image](https://user-images.githubusercontent.com/104793540/216782448-e10aeb36-e2b6-4bf1-8031-a0785aed9787.png)
 
-** Both pages and calculations working**
+**Both pages and calculations working**
 
 Troubleshooting:
 - WebSocket connection failed
 - opening websocket connections
 - solution: set an environment variable on the client service in the docker-compose.yml
+
+
+![image](https://user-images.githubusercontent.com/104793540/216785296-33862609-6496-4b96-bd43-7db8f222e0f6.png)
 
 ## Continous Integration Workflow for Multiple Images
 
