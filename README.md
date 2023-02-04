@@ -527,3 +527,5 @@ Troubleshooting:
 - WebSocket connection failed
 - opening websocket connections
 - solution: set an environment variable on the client service in the docker-compose.yml
+
+## Continous Integration Workflow Multiple Images
