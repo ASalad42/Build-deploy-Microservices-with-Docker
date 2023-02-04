@@ -633,5 +633,12 @@ Travis Config File:
 
 ![image](https://user-images.githubusercontent.com/104793540/216785085-b66c62e2-c86a-4a7c-8f5f-12bdd8d9d0a8.png)
 
+- link github and travis ci 
 - .travis.yml 
+- use env variables for docker login cred
+- on travis repo for project > more options > environment variables 
+
+![image](https://user-images.githubusercontent.com/104793540/216789867-65327612-eaa0-48e7-b1e6-7b9bea16d436.png)
+
+
 
