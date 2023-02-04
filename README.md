@@ -522,3 +522,8 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 - add nginx to docker compose with route mapping 
 - `docker-compose up --build`
+
+Troubleshooting:
+- WebSocket connection failed
+- opening websocket connections
+- solution: set an environment variable on the client service in the docker-compose.yml
