@@ -605,3 +605,19 @@ Troubleshooting:
 - solution: set an environment variable on the client service in the docker-compose.yml
 
 ## Continous Integration Workflow for Multiple Images
+
+![image](https://user-images.githubusercontent.com/104793540/216783859-56015724-5226-4564-90e4-a72aa57a4087.png)
+
+
+Production Dockerfiles:
+- worker
+- server
+- client
+- nginx 
+
+Travis Config File:
+
+![image](https://user-images.githubusercontent.com/104793540/216785085-b66c62e2-c86a-4a7c-8f5f-12bdd8d9d0a8.png)
+
+- .travis.yml 
+
