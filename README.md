@@ -417,6 +417,7 @@ deploy:
 ![image](https://user-images.githubusercontent.com/104793540/215518313-8d7ad55a-4ec6-4011-a888-08420767902d.png)
 ![image](https://user-images.githubusercontent.com/104793540/215519669-91e5da36-88a3-41a8-911d-db428ceb700c.png)
 
+- Nginx: host react source/production code files
 - Dockerfile add EXPOSE 80 for nginx, makes changes in app.js file, commited changes and pushed to github
 - travis ci picked up change and ran tests > deployed application to AWS.
 
@@ -474,3 +475,8 @@ Dev Dockerfiles:
 Docker compose:
 
 ![image](https://user-images.githubusercontent.com/104793540/216120527-5992c646-d023-4607-89c1-143a08e38040.png)
+
+Routing with Nginx:
+
+![image](https://user-images.githubusercontent.com/104793540/216769144-318f5721-f5ba-4885-8fc7-eb0214100458.png)
+
