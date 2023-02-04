@@ -468,9 +468,9 @@ Development and Production Plan
 
 Dev Dockerfiles:
 
-- react app (2 pages user can visit in application)
-- express server (API layer that communicates with redis and postgress)
-- worker (calculates value for indices and puts back into redis)
+- client: react app (2 pages user can visit in application)
+- server: express server (API layer that communicates with redis and postgress)
+- worker: worker (calculates value for indices and puts back into redis)
 
 Docker compose:
 
@@ -480,3 +480,45 @@ Routing with Nginx:
 
 ![image](https://user-images.githubusercontent.com/104793540/216769144-318f5721-f5ba-4885-8fc7-eb0214100458.png)
 
+Aim:
+- all frontend react code to one backend (requests)
+- all frontend express code to one backend (api requests)
+
+Need:
+
+![image](https://user-images.githubusercontent.com/104793540/216769413-642eef97-554e-4f3b-bdb6-d43e8f6c21e9.png)
+
+- default.conf file: 
+```
+upstream client {
+    server client:3000;
+}
+
+upstream api {
+    server api:5000;
+}
+
+
+server {
+    litsen 80;
+
+    location / {
+        proxy_pass http://client; 
+    }
+
+    location /api {
+        rewrite /api/(.*) /$1 break;
+        proxy_pass http://api;
+    }
+}
+```
+
+- dockerfile for nginx
+
+```
+FROM nginx
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+```
+
+- add nginx to docker compose with route mapping 
+- `docker-compose up --build`
