@@ -521,6 +521,9 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf
 ```
 
 - add nginx to docker compose with route mapping 
+- `docker-compose up --build` >> docker endpoint for "default" not found
+- `docker context ls`
+- fix errors then `docker-compose down`
 - `docker-compose up --build`
 
 Troubleshooting:
