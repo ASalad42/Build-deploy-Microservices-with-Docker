@@ -476,6 +476,65 @@ Docker compose:
 
 ![image](https://user-images.githubusercontent.com/104793540/216120527-5992c646-d023-4607-89c1-143a08e38040.png)
 
+```
+version: '3'
+services:
+  postgres:
+    image: 'postgres:latest'
+  redis:
+    image: 'redis:latest'
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always 
+    build: 
+      dockerfile: Dockerfile.dev
+      context: ./nginx
+    ports:
+      - '3050:80'
+  api:
+    depends_on:
+      - redis
+      - postgres 
+    build: 
+      dockerfile: Dockerfile.dev
+      context: ./server  # . means look in current wkdir and look for dir /server
+    volumes:
+      - /app/node_modules # inside container dont try to override this folder
+      - ./server:/app  # look inside server dir and copy everything into app folder in container 
+    environment:
+      - REDIS_HOST=redis  # at run time
+      - REDIS_PORT=6379
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=postgres
+      - PGPASSWORD=postgres_password
+      - PGPORT=5432
+      # all info for env variables from documentation for each service on dockerhub explorer 
+  client:
+    environment:
+      - WDS_SOCKET_PORT=0
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+  worker:
+    depends_on:
+      - redis
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./worker
+    volumes:
+      - /app/node_modules
+      - ./worker:/app
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+
+```
 Routing with Nginx:
 
 ![image](https://user-images.githubusercontent.com/104793540/216769144-318f5721-f5ba-4885-8fc7-eb0214100458.png)
