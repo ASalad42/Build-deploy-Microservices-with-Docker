@@ -691,6 +691,9 @@ after_success:
 
 ### EBS Application Creation
 
+- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions
+- Amazon ECS task definitions > Task definition parameters > Container definitions
+
 ### RDS Database Creation
 
 ### ElastiCache Redis Creation
