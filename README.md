@@ -688,3 +688,27 @@ after_success:
 - check travis logs for issues such as typo in syntax of dockerfiles and incorrect config in travis yml file. Helped me fix both issues so very useful 
 
 ## Multi-Container Deployments to AWS
+
+### EBS Application Creation
+
+### RDS Database Creation
+
+### ElastiCache Redis Creation
+
+### Creating a Custom Security Group
+
+#### Applying Security Groups to ElastiCache
+
+#### Applying Security Groups to RDS
+
+#### Applying Security Groups to Elastic Beanstalk
+
+### Add AWS configuration details to .travis.yml file's deploy script
+
+### Setting Environment Variables
+
+### IAM Keys for Deployment
+
+### AWS Keys in Travis 
+
+### Deploying App
