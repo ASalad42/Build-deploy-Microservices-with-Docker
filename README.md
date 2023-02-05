@@ -682,3 +682,6 @@ after_success:
 
 - push to github and wait for ci to finish, check dockerhub for pushed images
 
+![image](https://user-images.githubusercontent.com/104793540/216816505-2c207b5d-ef4f-418e-96ac-d499a9c3673d.png)
+![image](https://user-images.githubusercontent.com/104793540/216817232-88291d35-9089-4c09-bca5-41a50d3dd512.png)
+
