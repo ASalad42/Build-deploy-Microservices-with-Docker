@@ -640,5 +640,45 @@ Travis Config File:
 
 ![image](https://user-images.githubusercontent.com/104793540/216789867-65327612-eaa0-48e7-b1e6-7b9bea16d436.png)
 
+connecting Travis CI to dockerhub:
 
+```
+# log in to docker cli 
+  - echo "DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+```
+
+partially complete travis yml:
+````
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t asalad42/react-test -f ./client/Dockerfile.dev ./client
+
+# path to file and look into client dir to ger build context 
+
+script:
+  - docker run -e CI=true asalad42/react-test npm run test
+
+after_success: 
+  - docker build -t asalad42/multi-client ./client 
+  - docker build -t asalad42/multi-nginx ./nginx
+  - docker build -t asalad42/multi-server ./server  
+  - docker build -t asalad42/multi-worker ./worker  
+
+# log in to docker cli 
+  - echo "DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+# take these production images and push to docker hub 
+  - docker push asalad42/multi-client
+  - docker push asalad42/multi-nginx
+  - docker push asalad42/multi-server
+  - docker push asalad42/multi-worker
+  
+````
+
+- push to github and wait for ci to finish, check dockerhub for pushed images
 
