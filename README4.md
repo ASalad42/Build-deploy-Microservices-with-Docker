@@ -1,22 +1,22 @@
 # Multi Container AWS Steps
 
-## Application Creation (If using Multi-Container Docker Platform)
+## EBS Application Creation (If using Multi-Container Docker Platform)
 
-1. to AWS Management Console and use Find Services to search for Elastic Beanstalk
+Go to AWS Management Console and use Find Services to search for Elastic Beanstalk
 
-2. ck “Create Application”
+Click “Create Application”
 
-3.  Application Name to 'multi-docker'
+Set Application Name to 'multi-docker'
 
-4. oll down to Platform and select Docker
+Scroll down to Platform and select Docker
 
-5. latform Branch, select Multi-Container Docker running on 64bit Amazon Linux
+In Platform Branch, select Multi-Container Docker running on 64bit Amazon Linux
 
-6. ck Create Application
+Click Create Application
 
-7.  may need to refresh, but eventually, you should see a green checkmark underneath Health.
+You may need to refresh, but eventually, you should see a green checkmark underneath Health.
 
-EBS Application Creation (If using Amazon Linux 2 Platform Platform)
+## EBS Application Creation (If using Amazon Linux 2 Platform Platform)
 
 Make sure you have followed the guidance in this note.
 
@@ -34,7 +34,7 @@ Click Create Application
 
 You may need to refresh, but eventually, you should see a green checkmark underneath Health.
 
-RDS Database Creation
+## RDS Database Creation
 
 Go to AWS Management Console and use Find Services to search for RDS
 
@@ -62,7 +62,7 @@ Set Initial database name to fibvalues
 
 Scroll down and click Create Database button
 
-ElastiCache Redis Creation
+## ElastiCache Redis Creation
 
 Go to AWS Management Console and use Find Services to search for ElastiCache
 
@@ -86,7 +86,7 @@ Scroll down and click the Next button again.
 
 Scroll down and click the Create button.
 
-Creating a Custom Security Group
+## Creating a Custom Security Group
 
 Go to AWS Management Console and use Find Services to search for VPC
 
@@ -112,7 +112,7 @@ Click in the box next to Source and start typing 'sg' into the box. Select the S
 
 Click the Save rules button
 
-Applying Security Groups to ElastiCache
+## Applying Security Groups to ElastiCache
 
 Go to AWS Management Console and use Find Services to search for ElastiCache
 
@@ -130,7 +130,7 @@ Scroll down and click Preview Changes
 
 Click the Modify button.
 
-Applying Security Groups to RDS
+## Applying Security Groups to RDS
 
 Go to AWS Management Console and use Find Services to search for RDS
 
@@ -144,7 +144,7 @@ Scroll down and click the Continue button
 
 Click Modify DB instance button
 
-Applying Security Groups to Elastic Beanstalk
+## Applying Security Groups to Elastic Beanstalk
 
 Go to AWS Management Console and use Find Services to search for Elastic Beanstalk
 
@@ -162,7 +162,7 @@ Click Apply and Click Confirm
 
 After all the instances restart and go from No Data to Severe, you should see a green checkmark under Health.
 
-Add AWS configuration details to .travis.yml file's deploy script
+## Add AWS configuration details to .travis.yml file's deploy script
 
 Set the region. The region code can be found by clicking the region in the toolbar next to your username.
 eg: 'us-east-1'
@@ -183,7 +183,7 @@ Set access_key_id to $AWS_ACCESS_KEY
 
 Set secret_access_key to $AWS_SECRET_KEY
 
-Setting Environment Variables
+## Setting Environment Variables
 
 Go to AWS Management Console and use Find Services to search for Elastic Beanstalk
 
@@ -219,7 +219,7 @@ Click Apply button
 
 After all instances restart and go from No Data, to Severe, you should see a green checkmark under Health.
 
-IAM Keys for Deployment
+## IAM Keys for Deployment
 
 You can use the same IAM User's access and secret keys from the single container app we created earlier, or, you can create a new IAM user for this application:
 
@@ -251,7 +251,7 @@ eg: docker-multi-travis-ci
 
 13. Copy and / or download the Access Key ID and Secret Access Key to use in the Travis Variable Setup.
 
-AWS Keys in Travis
+## AWS Keys in Travis
 
 Go to your Travis Dashboard and find the project repository for the application we are working on.
 
@@ -261,7 +261,7 @@ Create an AWS_ACCESS_KEY variable and paste your IAM access key
 
 Create an AWS_SECRET_KEY variable and paste your IAM secret key
 
-Deploying App
+## Deploying App
 
 Make a small change to your src/App.js file in the greeting text.
 
