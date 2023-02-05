@@ -670,7 +670,7 @@ after_success:
   - docker build -t asalad42/multi-worker ./worker  
 
 # log in to docker cli 
-  - echo "DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # take these production images and push to docker hub 
   - docker push asalad42/multi-client
@@ -682,7 +682,9 @@ after_success:
 
 - push to github and wait for ci to finish, check dockerhub for pushed images
 
-![image](https://user-images.githubusercontent.com/104793540/216816505-2c207b5d-ef4f-418e-96ac-d499a9c3673d.png)
+![image](https://user-images.githubusercontent.com/104793540/216817702-a9e88470-afc9-46ff-9b03-8b76dab1cf89.png)
 ![image](https://user-images.githubusercontent.com/104793540/216817642-f7d08adc-6049-4c96-9d07-f0e4bdfa468f.png)
 
 - check travis logs for issues such as typo in syntax of dockerfiles and incorrect config in travis yml file. Helped me fix both issues so very useful 
+
+## Multi-Container Deployments to AWS
