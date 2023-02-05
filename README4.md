@@ -1,20 +1,5 @@
 # Multi Container AWS Steps
 
-## EBS Application Creation (If using Multi-Container Docker Platform)
-
-Go to AWS Management Console and use Find Services to search for Elastic Beanstalk
-
-Click “Create Application”
-
-Set Application Name to 'multi-docker'
-
-Scroll down to Platform and select Docker
-
-In Platform Branch, select Multi-Container Docker running on 64bit Amazon Linux
-
-Click Create Application
-
-You may need to refresh, but eventually, you should see a green checkmark underneath Health.
 
 ## EBS Application Creation (If using Amazon Linux 2 Platform Platform)
 
