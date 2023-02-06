@@ -160,7 +160,7 @@ eg: 'MultiDocker-env'
 
 Set the bucket_name. This can be found by searching for the S3 Storage service. Click the link for the elasticbeanstalk bucket that matches your region code and copy the name.
 
-eg: 'elasticbeanstalk-us-east-1-923445599289'
+eg: 'elasticbeanstalk-eu-west-1-923445599289'
 
 Set the bucket_path to 'docker-multi'
 
