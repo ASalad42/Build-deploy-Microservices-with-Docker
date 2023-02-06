@@ -722,7 +722,7 @@ after_success:
 
 - multi-docker sg for traffic for services in multi-docker app
 
-![image](https://user-images.githubusercontent.com/104793540/216968227-826437dc-cc54-4039-818b-8be37beab9ea.png)
+![image](https://user-images.githubusercontent.com/104793540/217014022-abf6274b-41c4-439f-acd3-77d7d23f52cc.png)
 
 #### Applying Security Groups to ElastiCache
 ![image](https://user-images.githubusercontent.com/104793540/216969132-7cffdbb5-7ec0-4498-a7f3-261f9b86dfd6.png)
@@ -776,5 +776,8 @@ For both express API and worker to function correctly, environment variables mus
 
 checking calculations and if databases hold values:
 
-##### Cleaning up AWS Resources 
+![image](https://user-images.githubusercontent.com/104793540/217014630-1ebabbfe-71a7-41f4-934d-20dffbd24660.png)
 
+
+##### Cleaning up AWS Resources 
+- EB, RDS, EC
