@@ -736,11 +736,32 @@ after_success:
 ![image](https://user-images.githubusercontent.com/104793540/216970704-3f11c07b-966c-425e-a38f-94b958029ca6.png)
 
 ### Add AWS configuration details to .travis.yml file's deploy script
+```
+deploy:
+  provider: elasticbeanstalk
+  region: 'eu-west-1'
+  app: 'multi-docker'
+  env: 'Multidocker-env'
+  bucket_name: 'elasticbeanstalk-eu-west-1-670135081089'
+  bucket_path: 'docker-multi'
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
+````
 ### Setting Environment Variables
+For both express API and worker to function correctly, environment variables must be provided:
+
+![image](https://user-images.githubusercontent.com/104793540/216973944-ec510c1a-f8f3-49d4-ad59-864a94f84860.png)
 
 ### IAM Keys for Deployment
+- create user with permission AdministratorAccess-AWSElasticBeanstalk
+- generate access keys to put into travis ci 
 
 ### AWS Keys in Travis 
+- while in multi-docker project > settings > env var
+
+![image](https://user-images.githubusercontent.com/104793540/216976706-b4879d90-b0ee-40bc-bced-29c10195fc8f.png)
 
 ### Deploying App
