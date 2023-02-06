@@ -765,3 +765,16 @@ For both express API and worker to function correctly, environment variables mus
 ![image](https://user-images.githubusercontent.com/104793540/216976706-b4879d90-b0ee-40bc-bced-29c10195fc8f.png)
 
 ### Deploying App
+
+- save changes on local host > commit > push 
+- github picks up changes > travis ci picks up code 
+
+![image](https://user-images.githubusercontent.com/104793540/216983350-a318b1e6-8c67-4167-80f3-27692f25c5f6.png)
+![image](https://user-images.githubusercontent.com/104793540/216983407-5fb3c909-4f57-45ca-be7e-271d0f798c45.png)
+![image](https://user-images.githubusercontent.com/104793540/216983466-4b4b409b-1431-4ce8-b6dd-f8a8312e326d.png)
+![image](https://user-images.githubusercontent.com/104793540/216983673-a4548b75-56ec-4aec-ac67-625ae8eb8ca7.png)
+
+checking calculations and if databases hold values:
+
+##### Cleaning up AWS Resources 
+
