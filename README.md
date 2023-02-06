@@ -725,10 +725,15 @@ after_success:
 ![image](https://user-images.githubusercontent.com/104793540/216968227-826437dc-cc54-4039-818b-8be37beab9ea.png)
 
 #### Applying Security Groups to ElastiCache
+![image](https://user-images.githubusercontent.com/104793540/216969132-7cffdbb5-7ec0-4498-a7f3-261f9b86dfd6.png)
 
 #### Applying Security Groups to RDS
+![image](https://user-images.githubusercontent.com/104793540/216969799-f6784dc5-14a3-47da-9e45-fcb12af9881f.png)
+![image](https://user-images.githubusercontent.com/104793540/216970281-44f4d47b-3ab9-4d9c-b62e-ea6b2c4d6e33.png)
 
 #### Applying Security Groups to Elastic Beanstalk
+![image](https://user-images.githubusercontent.com/104793540/216970650-e89ea545-fc8b-40e8-b859-d9425c7ba032.png)
+![image](https://user-images.githubusercontent.com/104793540/216970704-3f11c07b-966c-425e-a38f-94b958029ca6.png)
 
 ### Add AWS configuration details to .travis.yml file's deploy script
 
