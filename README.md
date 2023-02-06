@@ -688,6 +688,7 @@ after_success:
 - check travis logs for issues such as typo in syntax of dockerfiles and incorrect config in travis yml file. Helped me fix both issues so very useful 
 
 ## Multi-Container Deployments to AWS
+![image](https://user-images.githubusercontent.com/104793540/216856230-788a5864-727b-46e5-bd0a-1433e72cefa5.png)
 
 ### EBS Application Creation
 
@@ -695,8 +696,10 @@ after_success:
 - Amazon ECS task definitions > Task definition parameters > Container definitions
 
 ### RDS Database Creation
+![image](https://user-images.githubusercontent.com/104793540/216856299-2d994f58-d41b-4d6f-a2e7-a8dd6c85de6e.png)
 
 ### ElastiCache Redis Creation
+![image](https://user-images.githubusercontent.com/104793540/216856269-b12415fa-12b5-4e9e-b404-a2a00eb7b6bf.png)
 
 ### Creating a Custom Security Group
 
