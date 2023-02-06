@@ -113,7 +113,7 @@ Tick the box next to the new multi-docker group and click Choose
 
 Scroll down and click Preview Changes
 
-Click the Modify button.
+Click the Modify button
 
 ## Applying Security Groups to RDS
 
