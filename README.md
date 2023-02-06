@@ -694,16 +694,35 @@ after_success:
 
 ### EBS Application Creation
 
-- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions
+ https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions
 - Amazon ECS task definitions > Task definition parameters > Container definitions
+
+![image](https://user-images.githubusercontent.com/104793540/216957400-efdd6cb8-c760-4c74-b309-8035a114b03a.png)
 
 ### RDS Database Creation
 ![image](https://user-images.githubusercontent.com/104793540/216856299-2d994f58-d41b-4d6f-a2e7-a8dd6c85de6e.png)
 
+- RDS > PostgreSQL > template free tier
+- master username and master password > env variables in docker compose file 
+- create database 
+
+![image](https://user-images.githubusercontent.com/104793540/216962530-6159b49e-80c5-4fc7-9082-02c928c1a3bc.png)
+
 ### ElastiCache Redis Creation
 ![image](https://user-images.githubusercontent.com/104793540/216856269-b12415fa-12b5-4e9e-b404-a2a00eb7b6bf.png)
 
+- ElastiCache > Redis clusters > create
+- Make sure Cluster Mode is DISABLED.
+- Scroll down to Cluster settings and change Node type to cache.t2.micro
+
+![image](https://user-images.githubusercontent.com/104793540/216963626-7cc0d7bf-0610-4d2c-8f97-6275363841cd.png)
+
 ### Creating a Custom Security Group
+![image](https://user-images.githubusercontent.com/104793540/216957610-5d75d57e-8ca6-4363-9c64-2599e66a304b.png)
+
+- multi-docker sg for traffic for services in multi-docker app
+
+![image](https://user-images.githubusercontent.com/104793540/216968227-826437dc-cc54-4039-818b-8be37beab9ea.png)
 
 #### Applying Security Groups to ElastiCache
 
