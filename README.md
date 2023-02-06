@@ -466,6 +466,8 @@ Development and Production Plan
 ![image](https://user-images.githubusercontent.com/104793540/216108092-2f9fd928-dcc5-4b72-87ea-2c59720bcc9b.png)
 ![image](https://user-images.githubusercontent.com/104793540/216108188-4c88cb81-e456-4aaa-8672-fa0b333e05f0.png)
 
+### Development 
+
 Create react app:
 - `npx create-react-app client`
 - `rm -r .git`
@@ -644,7 +646,7 @@ connecting Travis CI to dockerhub:
 
 ```
 # log in to docker cli 
-  - echo "DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 ```
 
 partially complete travis yml:
