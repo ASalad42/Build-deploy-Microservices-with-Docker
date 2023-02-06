@@ -27,7 +27,7 @@ Click Create database button
 
 Select PostgreSQL
 
-Change Version to the newest available v12 version (The free tier is currently not available for Postgres v13)
+Change Version to the newest available 
 
 In Templates, check the Free tier box.
 
@@ -150,7 +150,7 @@ After all the instances restart and go from No Data to Severe, you should see a 
 ## Add AWS configuration details to .travis.yml file's deploy script
 
 Set the region. The region code can be found by clicking the region in the toolbar next to your username.
-eg: 'us-east-1'
+eg: 'eu-west-1'
 
 app should be set to the EBS Application Name
 eg: 'multi-docker'
