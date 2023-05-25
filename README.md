@@ -54,6 +54,11 @@ overwritting default commands
 - `wsl --unregister docker-desktop-data`
 - `wsl --terminate docker-desktop`
 - `wsl --terminate docker-desktop-data`
+- Navigate to Appdata/Roaming/Docker folder in your user account
+- Open the settings file(JSON file) and make sure the following are set this way :point_down:
+
+"integratedWslDistros" : [ ]
+"enableIntegrationWithDefaultWslDistro" : false,
 
 docker run = docker create + docker start -a id
 redis - in memory data store, commonly used with web application. Redis is an open source, in-memory data structure store, used as a database, cache, and message broker. MongoDB and Redis are modern NoSQL databases.
